@@ -44,7 +44,7 @@ xy_sens = prompt("Enter your X and Y sens from Fortnite: ")
 targeting_sens = prompt("Enter your targeting sensitivity from Fortnite: ")
 
 print("[Lunar Paste] Make your targeting sens and scoped sense the same")
-sensitivity_settings = {"xy_sens": xy_sens, "targeting_sens": targeting_sens, "xy_scale": 2700/xy_sens, "targeting_scale": 720/(targeting_sens * xy_sens)}
+sensitivity_settings = {"xy_sens": xy_sens, "targeting_sens": targeting_sens, "xy_scale": 8430/xy_sens, "targeting_scale": 2121.55/(targeting_sens * xy_sens)}
 
 with open('lib/config/config.json', 'w') as outfile:
     json.dump(sensitivity_settings, outfile)
@@ -387,7 +387,7 @@ def start():
         targeting_sens = prompt("Targeting Sensitivity (from in-game settings): ")
     
         print("[Lunar Paste] Your in-game targeting sensitivity must be the same as your scoping sensitivity")
-        sensitivity_settings = {"xy_sens": xy_sens, "targeting_sens": targeting_sens, "xy_scale": 2700/xy_sens, "targeting_scale": 720/(targeting_sens * xy_sens)}
+        sensitivity_settings = {"xy_sens": xy_sens, "targeting_sens": targeting_sens, "xy_scale": 8430/xy_sens, "targeting_scale": 2121.55/(targeting_sens * xy_sens)}
     
         with open('lib/config/config.json', 'w') as outfile:
             json.dump(sensitivity_settings, outfile)
